@@ -1,0 +1,15 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  width: 80%;
+  height: 80%;
+  background-color: yellow;
+}
+
+.title{
+  text-align: center;
+}
