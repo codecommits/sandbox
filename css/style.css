@@ -5,11 +5,21 @@ body{
 }
 
 .main{
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   background-color: yellow;
 }
 
 .title{
-  text-align: center;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.h1{
+  padding:20px;
+}
+
+.body{
+  padding-left:20px;
+  padding-right: 20px;
 }
