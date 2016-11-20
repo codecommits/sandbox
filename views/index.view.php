@@ -3,14 +3,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
-  <title>Love for PHP</title>
+  <title>Daily PHP Practice code!</title>
 </head>
 <body>
   
   
   <div class="main">
   
-<h1 class="h1"> Welcome to my PHP blog</h1>
+<h1 class="h1"> Welcome to daily php code practice</h1>
     <hr>
     
  <?php foreach ($posts as $post) : ?>
