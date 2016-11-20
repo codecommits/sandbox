@@ -26,3 +26,11 @@ function get($tableName, $conn, $limit = 10){
   }
 }
 
+function query($query, $bindings, $conn)
+{
+  $stmt =  $conn->prepare($query);
+  $stmt->execute($bindings);
+  $results = $stmt->fetchAll();
+  return $results ? $results : false;
+}
+
