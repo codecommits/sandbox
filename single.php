@@ -7,8 +7,14 @@ if (!$conn) {
 }
 // $posts = get('php', $conn);
 $post = query('SELECT * FROM php WHERE id = :id LIMIT 1', 
-				array('id' => $_GET['id']), $conn)[0];
+				array('id' => $_GET['id']), $conn);
 // print_r($posts);
+
+if ($post) {
+	$post = $post[0];
+} else {
+	header('location:/');
+}
 
 // this works fine but I have to followr the 
 // the instruction.
