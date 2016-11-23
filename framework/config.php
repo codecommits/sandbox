@@ -2,5 +2,5 @@
 
 $config = array(
 'username' => 'root',
-'password' => '',
-'database' => 'blog');
+'password' => 'remainder',
+'database' => 'testm');
