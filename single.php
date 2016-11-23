@@ -6,11 +6,11 @@ if (!$conn) {
 //   echo 'Everything is fine baby!';
 }
 // $posts = get('php', $conn);
-$posts = query('SELECT * FROM php WHERE id = :id', 
-				array('id' => $_GET['id']), $conn);
+$post = query('SELECT * FROM php WHERE id = :id LIMIT 1', 
+				array('id' => $_GET['id']), $conn)[0];
 // print_r($posts);
 
 // this works fine but I have to followr the 
 // the instruction.
-$view_path = 'views/index.view.php';
+$view_path = 'views/single.view.php';
 require 'views/layout.php';
