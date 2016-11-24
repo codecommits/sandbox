@@ -12,3 +12,9 @@
     </div>
 </article>
 <?php endforeach; ?>
+
+<div style="margin-top: 20px; float: right; margin-right: 115px;">
+	<span>
+		<a href="/admin" style="font-size:20px; background-color: #f6d96c; padding: 8px;"> Admin Area</a>
+	</span>
+</div>
