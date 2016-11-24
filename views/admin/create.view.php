@@ -14,5 +14,8 @@
 			<input class="button" type="submit" value="Add Cousrse">
 		</li>
 	</ul>
+	<?php if (isset($alert)) : ?>
+		<p><?= $alert ?></p>
+	<?php endif ?>
 </form>
 </div>
