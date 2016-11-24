@@ -19,7 +19,8 @@ form textarea{
   height: 100px;
 }
 .button{
-  padding: 8px;
+  padding: 5px;
+  font-size: 18px;
 }
 form input{
   width: 100%;
@@ -31,7 +32,7 @@ form input{
 }
 
 #title{
-
+font-size: 20px;
 }
 #body{
   display: block;
