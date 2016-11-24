@@ -12,11 +12,13 @@ $post = query('SELECT * FROM php WHERE id = :id LIMIT 1',
 
 if ($post) {
 	$post = $post[0];
+	$view_path = 'views/single.view.php';
+	require 'views/layout.php';
 } else {
 	header('location:/');
 }
 
 // this works fine but I have to followr the 
 // the instruction.
-$view_path = 'views/single.view.php';
-require 'views/layout.php';
+// $view_path = 'views/single.view.php';
+// require 'views/layout.php';
