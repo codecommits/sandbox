@@ -1,5 +1,5 @@
 <?php 
-require 'framework/functions.php';
+require 'framework/db.php';
 require 'function.php';
 $conn = connect($config);
 if (!$conn) {

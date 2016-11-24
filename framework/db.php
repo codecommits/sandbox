@@ -25,14 +25,16 @@ function query($query, $bindings, $conn)
 { 
   $stmt =  $conn->prepare($query);
   $stmt->execute($bindings);
-  $results = $stmt->fetchAll();
-  return $results ? $results : false;
+  return $stmt;
+  //$results = $stmt->fetchAll(); // Fatal error: Uncaught exception on create page
+  //return $results ? $results : false;
 }
 function get_by_id($id, $conn)
 {
-return $post = query(
+         $query = query(
         'SELECT * FROM php WHERE id = :id LIMIT 1', 
          array('id' => $id), $conn
          );
+return $query->fetchAll();
 }
 
